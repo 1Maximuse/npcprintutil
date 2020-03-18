@@ -71,5 +71,5 @@ def print_view(request, username, filename):
     else:
         raise Http404()
 
-def handler404(request):
+def handler404(request, exception):
     return render(request, '404.html', status=404)

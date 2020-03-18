@@ -1,2 +1,4 @@
 files/
 static/
+migrations/
+__pycache__/
