@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                width: 21cm;
+                height: 29.7cm;
+                margin: 5mm;
+            }
+            span {
+                float: right;
+            }
+            pre {
+                border-top: 1px solid black;
+                padding: 2mm;
+            }
+        </style>
+    </head>
+    {% if print %}
+    <body onload="window.print()">
+    {% else %}
+    <body>
+    {% endif %}
+        <strong>
+            {{ filename }}
+            <span>{{ username }}</span>
+        </strong>
+        <pre>{{ contents }}</pre>
+    </body>
+</html>
